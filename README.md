@@ -3,7 +3,7 @@
 
 **準備**  
 ・ollamaをインストール  
-・ollama pull gemma3:4b
+・ollama pull gemma3:4b  
 ・ollamaをサービス起動(最新版は自動で起動されます)   
 
 **使用方法**  
