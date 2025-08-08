@@ -39,6 +39,8 @@ dependencies:
 
   flutter_markdown: ^0.6.18
 
+  intl: ^0.18.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
