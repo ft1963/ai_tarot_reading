@@ -32,7 +32,9 @@ class _TarotResultPageState extends State<TarotResultPage> {
   }
 
   Future<void> _fetchTarotReading() async {
-    final prompt = 'あなたはタロットカード占い師です。「${widget.consultation}」という相談に対してカードを引いたところ、「${widget.selectedCard}」の「${widget.position}」が出ました。相手に寄り添った親切な鑑定をお願いします。鑑定結果はMarkdown記法を用いて、見出しや箇条書きで分かりやすく整理してください。';
+    DateTime now = DateTime.now();
+    String formattedDate = now.toString();
+    final prompt = '現在の日時は${formattedDate}で、あなたはタロットカード占い師です。「${widget.consultation}」という相談に対してカードを引いたところ、「${widget.selectedCard}」の「${widget.position}」が出ました。相手に寄り添った親切な鑑定をお願いします。鑑定結果はMarkdown記法を用いて、見出しや箇条書きで分かりやすく整理してください。';
     final List<Map<String, String>> chatHistory = [
       {'role': 'user', 'content': prompt}
     ];
